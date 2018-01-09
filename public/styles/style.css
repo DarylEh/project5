@@ -133,6 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
   background-color: #F5F3EE; }
 
 .background::after {
@@ -165,8 +166,19 @@ h1, h2 {
 .date, .name, .rating, .overall, .submit {
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 1rem; }
+
+label {
+  padding-bottom: 10px; }
+
+.submit {
+  padding: 10px;
+  border-radius: 5px; }
+
+img {
+  border: 0;
+  max-width: 50%; }
 
 .wrapper {
   width: 40%;
@@ -182,7 +194,7 @@ ul.restaurants {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
-  border: solid black 1px;
+  border: solid black 5px;
   padding: 2rem;
   background-color: white; }
 
@@ -193,13 +205,22 @@ ul.restaurants {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  margin: 5px;
+  padding: 5px; }
+
+.removeButton {
+  height: 100%;
+  padding: 10px;
+  margin: 10px; }
 
 @media (max-width: 429px) {
   h1 {
     font-size: 2.5rem; }
   h2 {
     font-size: 2rem; }
+  .date, .name, .rating, .overall, .submit {
+    font-size: 1.6rem; }
   .mainForm {
     margin-bottom: 170%;
     margin-top: 40%; }
@@ -217,7 +238,9 @@ ul.restaurants {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: .8rem; } }
+    font-size: .8rem; }
+  .removeButton {
+    width: 15%; } }
 
 @media (min-width: 430px) and (max-width: 579px) {
   header {
